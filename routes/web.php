@@ -99,6 +99,36 @@ function buscaPeli($sarasa) {
 //
 // }
 
+
+// Crear la ruta ​ /genres/{id}​​ , junto con el método GenresController@show​​ .
+
+Route::get( '/genres/{id}', 'GenresController@show' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- CLASE 4 (?) CREO (arriba) -----*/
+
 Route::get('/pelicula/id/{id}', function ($id) {
   return view('buscaID($id)');
 });
@@ -111,7 +141,7 @@ Route::get('/pelicula/id/{id}', function ($id) {
 //     buscaID($id);
 // });
 
-//------ CLASE 2 (arriba) ------//
+/*------ CLASE 2 (arriba) ------*/
 
 Route::get('/pelicula/{titulo}', function ($titulo) {
     buscaPeli($titulo);
