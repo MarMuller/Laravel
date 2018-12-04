@@ -102,6 +102,15 @@ function buscaPeli($sarasa) {
 
 // Crear la ruta ​ /genres/{id}​​ , junto con el método GenresController@show​​ .
 
+
+//PRIMERO DEBEMOS CREAR LA RUTA
+
+Route::get( '/movies/{id}/edit', 'PeliculasController@edit' );
+
+Route::get( '/movies/{id}', 'PeliculasController@show' );
+
+Route::get( '/movies/agregar', 'PeliculasController@save' );
+
 Route::get( '/genres/{id}', 'GenresController@show' );
 
 
